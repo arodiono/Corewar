@@ -98,6 +98,7 @@ void	model(t_data **data)
 {
 	(*data)->speed = 20000;
 	(*data)->procnumb = 1;
+	(*data)->win = (*data)->player;
 	create_map(&(*data));
 	start_process(&(*data));
 	free_player(&(*data)->player);
